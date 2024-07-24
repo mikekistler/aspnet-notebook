@@ -1,0 +1,21 @@
+{
+  "name": "ASPNET Notebook",
+
+  "build": {
+    "dockerfile": "./Dockerfile",
+    "context": ".",
+    "args": {
+       "VARIANT": "8.0-jammy"
+    }
+  },
+
+  // Configure tool-specific properties.
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": ["bierner.markdown-mermaid", "ms-dotnettools.dotnet-interactive-vscode"],
+      "settings": {}
+    }
+  }
+}
